@@ -21,12 +21,14 @@ exports.GetGrades = function(paperID){
 		toGet(paperID);
 	});
 };
+
+//获取总分
 function toGet(paperID){
 	console.log(Qnum);
 	console.log("partScore"+partScore);
 	fs.readFile(examPath+paperID+'.json','utf8',function(err,data){
 		var json = JSON.parse(data);
-		console.log('json:'+json)
+		console.log('json:'+json);
 		var sumGrade = 0;
 		for (var i = 1; i <= Qnum; i++) {
 				var arr = json['Q'+i];
