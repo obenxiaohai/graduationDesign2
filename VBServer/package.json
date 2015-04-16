@@ -1,0 +1,14 @@
+{
+  "name": "0vbexam",
+  "version": "1.0.0",
+  "description": "the server of the vbexam system",
+  "main": "app.js",
+  "dependencies":{
+  	"node-xlsx":"0.5.1"
+  	},
+  "scripts": {
+    "start": "./connect/conn.js"
+  },
+  "author": "jia",
+  "license": "ISC"
+}

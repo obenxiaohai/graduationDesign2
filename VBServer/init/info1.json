@@ -1,0 +1,10 @@
+{
+	"tip"   : "stuNum表示参加考试的学生人数，根据人数来生成试卷,grade表示试题难度，请根据Sheet表来判定难度。（1-n）",
+	"tip2"  : "后面四项分别是单选、多选、判断、程序题型，参数分别是文件名，题目数和单个分数（请规定总分，一般为100）。",
+	"stuNum": 30,
+	"grade" : 1,
+	"singleS": ["SingleSelect.xlsx",2,4],
+	"multiS" : ["MutiSelect.xlsx",2,4],
+	"judge" : ["Judgment.xlsx",2,4],
+	"shortA": ["ShortAnswer.xlsx",2,20]
+}
