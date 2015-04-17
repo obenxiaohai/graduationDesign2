@@ -85,8 +85,8 @@ public class useFrame {
 	   try{
 			String cmdStr2 = "cmd /k java MyFileServer";
 			p2 = Runtime.getRuntime().exec(cmdStr2);
-			String cmdStr3[] = {"cmd", "/k", "node","app"};
-			p3 = Runtime.getRuntime().exec(cmdStr3);
+			//String cmdStr3[] = {"cmd", "/k", "node","app"};
+			p3 = Runtime.getRuntime().exec("startapp.bat");
 			JOptionPane.showMessageDialog(null,"exam is starting,please keep the window open!");
 		}catch(Exception ex){
 		//ex.printStackTrace();
