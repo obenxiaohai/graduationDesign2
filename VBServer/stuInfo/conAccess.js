@@ -18,7 +18,7 @@ exports.Login = function(name,pwd,socket){
 	 access.query({ 
 		accessfile: accessfile, 
 		//sql: "SELECT password FROM demo WHERE id="+"'"+name+"'"
-		sql: util.format("SELECT password,paperID FROM demo WHERE id='%s'",+name)
+		sql: util.format("SELECT password,paperID,score FROM demo WHERE id='%s'",+name)
 		}, function(data){
 		var password;
 		var realPaperId;
