@@ -33,7 +33,7 @@ exports.Login = function(name,pwd,socket){
 
 		}
 		console.log('password:'+password+' '+'pwd:'+pwd);
-		if(password == pwd && isNaN(parseInt(finish_exam))){
+		if(password == pwd && (isNaN(parseInt(finish_exam))|| parseInt(finish_exam)==0)   ){
 			(function(paperID,name){
 				fs.readFile(examPath+paperID+'.json','utf8',function(err,data){
 					if (err) throw err;
