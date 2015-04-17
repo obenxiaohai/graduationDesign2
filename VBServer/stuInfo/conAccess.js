@@ -54,7 +54,12 @@ exports.Login = function(name,pwd,socket){
 				paperID++;
 		}else{
 			try{
-				socket.write('notok\r\n');
+				if(isNaN(parseInt(finish_exam))){
+					socket.write('finish\r\n');
+				}
+				else{
+					socket.write('notok\r\n');
+				}
 				console.log('not OK for login');
 			}catch(e){
 				console.log('学号为'+name+'的考生断开连接');
