@@ -1,5 +1,6 @@
 var fs = require('fs');
 var examPath = './exam/';
+//使用@#区分题间。使用#$区分题号与答案
 exports.WriteAnswer = function(paperID,ans){
 	fs.readFile(examPath+paperID+'.json','utf8',function(err,data){
 		var json = JSON.parse(data);
