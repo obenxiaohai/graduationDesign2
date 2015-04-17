@@ -55,10 +55,10 @@ exports.Login = function(name,pwd,socket){
 		}else{
 			try{
 				if(isNaN(parseInt(finish_exam))){
-					socket.write('finish\r\n');
+					socket.write('notok\r\n');
 				}
 				else{
-					socket.write('notok\r\n');
+					socket.write('finish\r\n');
 				}
 				console.log('not OK for login');
 			}catch(e){
