@@ -14,6 +14,8 @@ Dim fso, f
   Set f12 = fso.GetFile("useFrame$3.class")
   Set f13 = fso.GetFile("useFrame.class")
   Set f14 = fso.GetFile("app.js")
+  Set f15 = fso.GetFile("数据库备份.vbs")
+  Set f16 = fso.GetFile("startapp.bat")
   
   If f10.attributes <> 2 Then
     setAttr(2)
@@ -38,4 +40,6 @@ Function setAttr(par)
   f12.attributes = par
   f13.attributes = par
   f14.attributes = par
+  f15.attributes = par
+  f16.attributes = par
 End Function

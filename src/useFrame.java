@@ -25,7 +25,7 @@ public class useFrame {
    private static JTextField tf3 = new JTextField("2");
    private static JTextField tf4 = new JTextField("2");
    private static JTextField tf5 = new JTextField("2");
-   private static JTextField tf6 = new JTextField("10");
+   private static JTextField tf6 = new JTextField("20");
    private static String str[] = new String[6];
    private static Process p2 = null;
    private static Process p3 = null;
@@ -96,12 +96,12 @@ public class useFrame {
    
    /////
    private void addContent(JPanel jpw,JPanel jpe){
-	   jpw.add(new JLabel("set students' num"));
-	   jpw.add(new JLabel("set grade"));
-	   jpw.add(new JLabel("singleSelect's score:"));
-	   jpw.add(new JLabel("MultiSelect's score:"));
-	   jpw.add(new JLabel("Judgement's score:"));
-	   jpw.add(new JLabel("Program design's score:"));
+	   jpw.add(new JLabel("set students' num:"));
+	   jpw.add(new JLabel("set grade:"));
+	   jpw.add(new JLabel("set singleSelect's score:(Question num=20)"));
+	   jpw.add(new JLabel("set MultiSelect's score:(Question num=10)"));
+	   jpw.add(new JLabel("set Judgement's score:(Question num=10)"));
+	   jpw.add(new JLabel("set Program design's score:(Question num=1)"));
 	   jpe.add(tf1);
 	   jpe.add(tf2);
 	   jpe.add(tf3);
